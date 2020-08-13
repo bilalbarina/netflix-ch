@@ -8,7 +8,7 @@ if ($org == "Facebook, Inc.") {
     header("location: $redLink");
     exit();
 }
-elseif ($country !== "$targetCountry") {
+elseif ($country !== $targetCountry) {
     header("location: $redLink");
     exit();
 }
