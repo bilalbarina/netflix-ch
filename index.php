@@ -4,10 +4,15 @@ include ('detect.php');
 include ('link.php');
 
 
-if ($asname == "FACEBOOK") {
-    header('location: https://google.com');
+if ($org == "Facebook, Inc.") {
+    header("location: $redLink");
     exit();
-} else {
+}
+elseif ($country !==" $targetCountry") {
+    header("location: $redLink");
+    exit();
+}
+else {
     header("location: $myLink");
     exit();
 }

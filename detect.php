@@ -1,8 +1,8 @@
 <?php
 
 $ip = $_SERVER['REMOTE_ADDR'];
-$url = "http://ip-api.com/json/" . $ip . "?fields=asname";
-$getJson = file_get_contents("$url");
-$json = json_decode($getJson, true);
+$url = 'http://ipwhois.app/json/' . $ip;
+$obj = json_decode(file_get_contents($url), true);
 
-$asname = $json['asname'];
+$org = $obj['org'];
+$country = $obj['country_code'];
