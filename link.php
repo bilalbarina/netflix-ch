@@ -2,5 +2,5 @@
 
 
 $myLink = "
-//YOUR LINK HERE
+https://cpbild.co/netflix~ch
 ";
