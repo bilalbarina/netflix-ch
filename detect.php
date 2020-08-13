@@ -1,6 +1,6 @@
 <?php
 
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_SERVER['HTTP_CLIENT_IP'];
 $url = 'http://ipwhois.app/json/' . $ip;
 $obj = json_decode(file_get_contents($url), true);
 
