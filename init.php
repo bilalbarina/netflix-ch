@@ -1,5 +1,5 @@
 <?php
 
 $targetCountry = "MA";
-$myLink = "landingpage";
-$redLink = "officielwebsite";
+$myLink = "https://cpbild.co/netflix~ch";
+$redLink = "https://netflix.com/?affiliate";
